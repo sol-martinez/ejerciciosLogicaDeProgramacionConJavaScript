@@ -3,7 +3,6 @@ Realizar una función que nos permita realizar las 4 operaciones aritméticas, e
 Si el parámetro de la operación no es válido que mande un error personalizado a la consola.
 */
 
-/*
 function ejercicioUno(a,b, operation){
     if(operation === "suma"){
         return console.log(a + b);
@@ -17,7 +16,6 @@ function ejercicioUno(a,b, operation){
         console.error(`La operación ${operation} no es válida!!`)
     }
 }
-
 
 //OTRA MANERA
 
@@ -35,7 +33,6 @@ function ejercicioUno(a, b, operation){
             console.error(`La operación ${operation} no es válida!!`)
     }
 }
-*/
 
 
 /* EJERCICIO 2
@@ -53,8 +50,21 @@ function ejercicioDos(a, b){
 }
 
 
+/*EJERCICIO 3
+Realizar una tabla de multiplicación de un número (a) desde 0 hasta x, pero que no se muestre la multiplicacion de a * 5
+*/
+
+function ejercicioTres(a,x){
+    for(let i=0; i <= x; i++){
+        if(i !== 5) console.log(`${a} x ${i} = ${a * i}`)
+    }
+}
+
+
 
 //EJECUCIÓN DE FUNCIONES
-//ejercicioUno(12,5,"suma");
+ejercicioUno(12,5,"suma");
 
 ejercicioDos(2,200);
+
+ejercicioTres(4,15)
