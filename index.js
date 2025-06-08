@@ -78,6 +78,21 @@ function ejercicioCuatro(){
     console.log(`Estos son los numeros que son multiplos del 3: ${multiplos}`)
 }
 
+
+/*EJERCICIO 5
+Hacer una función que haga de forma aleatoria un número entre 1 y 1000, y que a ese número le saqué su mitad, el doble y su raíz cuadrada.
+*/
+
+function ejercicioCinco(){
+    let n=Math.floor(Math.random() * 1000) + 1;
+    console.log(`La mitad de ${n}: ${n / 2}`);
+    console.log(`El doble de ${n}: ${n * 2}`);
+    console.log(`La raiz cuadrada de ${n}: ${Math.sqrt(n)}`)
+}
+
+
+
+
 //EJECUCIÓN DE FUNCIONES
 ejercicioUno(12,5,"suma");
 
@@ -86,3 +101,5 @@ ejercicioDos(2,200);
 ejercicioTres(4,15)
 
 ejercicioCuatro()
+
+ejercicioCinco()
