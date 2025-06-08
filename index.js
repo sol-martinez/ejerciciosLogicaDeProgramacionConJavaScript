@@ -61,6 +61,22 @@ function ejercicioTres(a,x){
 }
 
 
+/*EJERCICIO 4
+Hacer una función que filtre todos los números que sean múltiplos del 3 de un arreglo que contenga los números del 1 al 100
+*/
+
+function ejercicioCuatro(){
+    let array=[];
+    let multiplos=[];
+    for(let i=1; i <= 100; i++){
+        array.push(i)
+    }
+    console.log(`Este es el arreglo principal: ${array}`)
+    array.filter((eL)=> {
+        if(eL % 3 === 0) multiplos.push(eL)
+        });
+    console.log(`Estos son los numeros que son multiplos del 3: ${multiplos}`)
+}
 
 //EJECUCIÓN DE FUNCIONES
 ejercicioUno(12,5,"suma");
@@ -68,3 +84,5 @@ ejercicioUno(12,5,"suma");
 ejercicioDos(2,200);
 
 ejercicioTres(4,15)
+
+ejercicioCuatro()
